@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FiArrowUpRight, FiCoffee, FiHeart, FiSun, FiWifi, FiWind, FiMapPin, FiClock, FiStar } from 'react-icons/fi';
+import { FiArrowUpRight, FiCoffee, FiHeart, FiSun, FiWifi, FiWind, FiClock, FiStar } from 'react-icons/fi';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import '../styles/About.css';

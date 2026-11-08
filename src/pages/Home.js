@@ -9,7 +9,6 @@ import '../styles/Home.css';
 import rooms from '../data/rooms';
 
 function Home() {
-  const featuredRooms = rooms.slice(0, 3);
 
   return (
     <div className="home-wrapper">

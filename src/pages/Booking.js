@@ -27,7 +27,7 @@ function Booking() {
     if (room) {
       setGuests(1);
     }
-  }, [id]);
+  },[room]);
 
   const today = new Date().toISOString().split('T')[0];
 
