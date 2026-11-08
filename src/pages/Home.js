@@ -1,15 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import enter from '../assets/images/entrance.png';
-import { 
-  FiArrowRight, 
-  FiArrowUpRight, 
-  FiCalendar, 
-  FiUsers, 
-  FiStar, 
-  FiMaximize2, 
-  FiUserCheck 
-} from 'react-icons/fi';
+import {FiArrowRight, FiArrowUpRight, FiStar} from 'react-icons/fi';
 
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';

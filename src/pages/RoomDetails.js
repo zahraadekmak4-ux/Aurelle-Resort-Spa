@@ -11,7 +11,7 @@ function RoomDetails() {
   const { id } = useParams();
   const navigate = useNavigate();
 
-  const { selectedRoom, chooseRoom } = useHotel();
+  const { chooseRoom } = useHotel();
 
   const room = rooms.find(item => item.id === Number(id));
 
@@ -19,7 +19,7 @@ function RoomDetails() {
     if (room) {
       chooseRoom(room);
     }
-  }, [id]);
+  }, [room, chooseRoom]);
 
   if (!room) {
     return (

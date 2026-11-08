@@ -1,11 +1,10 @@
-
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { FiCalendar, FiUsers, FiArrowLeft, FiArrowUpRight, FiCheckCircle } from 'react-icons/fi';
 
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import rooms from '../data/rooms.json';
+import rooms from '../data/rooms.js';
 import '../styles/Booking.css';
 import { useHotel } from '../context/HotelContext';
 
