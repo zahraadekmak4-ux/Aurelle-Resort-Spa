@@ -1,0 +1,51 @@
+
+[
+  {
+    "id": 1,
+    "name": "Deluxe Garden Room",
+    "category": "Deluxe",
+    "price": 180,
+    "capacity": 2,
+    "size": 35,
+    "beds": "1 King Bed",
+    "image": "/images/room-deluxe.jpg",
+    "description": "A peaceful retreat featuring elegant interiors, a comfortable king bed, and beautiful garden views.",
+    "amenities": ["Free Wi-Fi", "Air Conditioning", "Smart TV", "Private Bathroom"]
+  },
+  {
+    "id": 2,
+    "name": "Premium Sea View Suite",
+    "category": "Suite",
+    "price": 280,
+    "capacity": 2,
+    "size": 55,
+    "beds": "1 King Bed",
+    "image": "/images/room-suite.jpg",
+    "description": "Enjoy breathtaking sea views, spacious living areas, and an atmosphere of refined luxury.",
+    "amenities": ["Sea View", "Free Wi-Fi", "Mini Bar", "Private Balcony"]
+  },
+  {
+    "id": 3,
+    "name": "Executive Luxury Suite",
+    "category": "Luxury",
+    "price": 350,
+    "capacity": 3,
+    "size": 70,
+    "beds": "1 King Bed + Sofa Bed",
+    "image": "/images/room-executive.jpg",
+    "description": "A sophisticated suite designed for guests who appreciate space, privacy, and exceptional comfort.",
+    "amenities": ["Living Area", "Free Wi-Fi", "Mini Bar", "Luxury Bathroom"]
+  },
+  {
+    "id": 4,
+    "name": "Royal Presidential Suite",
+    "category": "Presidential",
+    "price": 520,
+    "capacity": 4,
+    "size": 110,
+    "beds": "2 King Beds",
+    "image": "/images/room-presidential.jpg",
+    "description": "Experience the highest level of hospitality in our exclusive presidential suite.",
+    "amenities": ["Private Lounge", "Panoramic View", "Jacuzzi", "Premium Service"]
+  }
+]

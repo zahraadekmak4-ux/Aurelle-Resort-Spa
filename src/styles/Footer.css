@@ -1,0 +1,249 @@
+
+/* ================================
+   AURELLE - COMPACT LUXURY FOOTER
+================================ */
+
+.aurelle-footer {
+  background: #252820;
+  color: #f8f5ef;
+  padding: 48px 0 20px;
+}
+
+/* MAIN LAYOUT */
+
+.footer-main {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 65px;
+  padding-bottom: 38px;
+}
+
+/* BRAND */
+
+.footer-logo {
+  display: inline-block;
+  font-family: 'Playfair Display', serif;
+  font-size: 27px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-logo .dot {
+  color: #c5a46d;
+}
+
+.brand-description {
+  color: #b9b7ad;
+  font-size: 12px;
+  line-height: 1.9;
+  margin-top: 13px;
+  max-width: 280px;
+}
+
+/* SOCIAL LINKS */
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-top: 18px;
+}
+
+.footer-socials a {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #66665d;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d2b78f;
+  font-size: 13px;
+  transition: all 0.3s ease;
+}
+
+.footer-socials a:hover {
+  background: #b99a6b;
+  border-color: #b99a6b;
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* FOOTER COLUMNS */
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-column h4 {
+  color: #d2b78f;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 17px;
+}
+
+.footer-links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.footer-column a {
+  color: #c4c2b9;
+  font-size: 12px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+  color: #d2b78f;
+  padding-left: 3px;
+}
+
+/* FOOTER BOTTOM */
+
+.footer-bottom {
+  border-top: 1px solid #484940;
+  padding-top: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.footer-bottom p {
+  color: #aaa99f;
+  font-size: 9px;
+  letter-spacing: 0.8px;
+  margin: 0;
+}
+
+.footer-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #d2b78f;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-back-link:hover {
+  color: #fff;
+}
+
+/* TABLET */
+
+@media (max-width: 991px) {
+  .footer-main {
+    grid-template-columns: 1.3fr 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 576px) {
+  .aurelle-footer {
+    padding: 38px 0 18px;
+  }
+
+  .footer-main {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 20px;
+    padding-bottom: 28px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .brand-description {
+    max-width: 300px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .footer-bottom p {
+    font-size: 8px;
+    line-height: 1.8;
+  }
+}
+
+
+/* Compact Footer */
+.footer {
+  padding: 32px 0 14px;
+}
+
+.footer-main {
+  gap: 35px;
+  padding-bottom: 25px;
+}
+
+.footer-brand p {
+  font-size: 12px;
+  line-height: 1.7;
+  max-width: 280px;
+}
+
+.footer h4 {
+  font-size: 13px;
+  margin-bottom: 14px;
+}
+
+.footer-links a {
+  font-size: 12px;
+  margin-bottom: 9px;
+}
+
+.footer-bottom {
+  padding-top: 14px;
+  font-size: 11px;
+}
+
+.footer-socials {
+  gap: 8px;
+}
+
+.footer-socials a {
+  width: 30px;
+  height: 30px;
+  font-size: 13px;
+}
+
+@media (max-width: 767px) {
+  .footer {
+    padding: 28px 0 12px;
+  }
+
+  .footer-main {
+    gap: 25px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
