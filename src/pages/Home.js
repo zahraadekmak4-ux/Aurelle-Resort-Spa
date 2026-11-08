@@ -6,7 +6,6 @@ import {FiArrowRight, FiArrowUpRight, FiStar} from 'react-icons/fi';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import '../styles/Home.css';
-import rooms from '../data/rooms';
 
 function Home() {
 
