@@ -6,6 +6,7 @@ import { FiArrowUpRight, FiMail, FiLock, FiUser, FiEye, FiEyeOff, FiCheckCircle 
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import '../styles/Auth.css';
+import sea from '../assets/images/sea-view.jpg';
 import { useHotel } from '../context/HotelContext';
 
 function Auth() {
@@ -110,7 +111,8 @@ function Auth() {
       <section className="auth-page">
         <div className="auth-container">
 
-          <div className="auth-image">
+          <div className="auth-image" 
+          style={{ backgroundImage: `url(${sea})` }}>
             <div className="auth-image-overlay"></div>
 
             <div className="auth-image-content">
