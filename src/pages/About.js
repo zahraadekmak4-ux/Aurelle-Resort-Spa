@@ -5,9 +5,6 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import '../styles/About.css';
 import hotelLobby from '../assets/images/hotel-lobby.jpg';
-import pool from '../assets/images/pool.jpg';
-import restaurant from '../assets/images/restaurant.jpg';
-import spa from '../assets/images/spa.jpg';
 import aboutHero from '../assets/images/about-hero.png';
 
 function About() {
@@ -153,36 +150,6 @@ function About() {
                 </article>
               );
             })}
-          </div>
-        </div>
-      </section>
-
-      <section className="about-gallery">
-        <div className="container">
-          <div className="about-gallery-heading">
-            <span className="section-eyebrow">A GLIMPSE INTO AURELLE</span>
-            <h2>Spaces Made to Inspire.</h2>
-          </div>
-
-          <div className="about-gallery-grid">
-            <div className="about-gallery-large">
-              <img
-  src={pool}
-  alt="Luxury AURELLE resort swimming pool"
-/>
-            </div>
-
-            <div className="about-gallery-small">
-             <img
-  src={restaurant}
-  alt="AURELLE fine dining restaurant"
-/>
-
-              <img
-  src={spa}
-  alt="AURELLE spa and wellness experience"
-/>
-            </div>
           </div>
         </div>
       </section>
