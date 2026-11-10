@@ -3,9 +3,10 @@ import twin from '../assets/images/twin.jpg';
 import suiteRoom from '../assets/images/room-suite.jpg';
 import junior from '../assets/images/junior1.jpg';
 import executiveRoom from '../assets/images/room-executive1.jpg';
-import royal from '../assets/images/royal1.png';
+import royal from '../assets/images/royal1.jpeg';
 import presidentialRoom from '../assets/images/room-presidential.jpg';
 import imperial from '../assets/images/imperial.jpg';
+
 const rooms = [
 
   // =========================
