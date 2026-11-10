@@ -1,14 +1,6 @@
-
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import {
-  FiSearch,
-  FiUsers,
-  FiMaximize2,
-  FiArrowUpRight,
-  FiSliders,
-  FiArrowDown
-} from 'react-icons/fi';
+import { FiSearch, FiUsers, FiMaximize2, FiArrowUpRight, FiSliders, FiArrowDown } from 'react-icons/fi';
 
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -229,9 +221,7 @@ function Rooms() {
                 <button
                   key={category.name}
                   className={
-                    activeCategory === category.name
-                      ? 'category-active'
-                      : ''
+                    activeCategory === category.name ? 'category-active'  : ''
                   }
                   onClick={() => scrollToCategory(category.name)}
                 >

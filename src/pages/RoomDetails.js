@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { FiArrowLeft, FiArrowUpRight, FiUsers, FiMaximize2, FiCheck, FiWifi, FiCoffee, FiWind, FiTv } from 'react-icons/fi';
 import Navbar from '../components/Navbar';

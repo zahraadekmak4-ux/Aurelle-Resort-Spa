@@ -1,12 +1,6 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
-import {
-  FiInstagram,
-  FiFacebook,
-  FiArrowUpRight,
-  FiMail
-} from 'react-icons/fi';
+import { FiInstagram, FiFacebook, FiArrowUpRight, FiMail } from 'react-icons/fi';
 
 import '../styles/Footer.css';
 
@@ -52,9 +46,6 @@ function Footer() {
               </Link>
             </div>
           </div>
-
-          
-
         </div>
 
         {/* Footer Bottom */}

@@ -1,13 +1,5 @@
-
-import React, {
-  createContext,
-  useContext,
-  useEffect,
-  useState
-} from 'react';
-
+import { createContext, useContext, useEffect, useState } from 'react';
 const HotelContext = createContext();
-
 export function HotelProvider({ children }) {
 
   const [currentUser, setCurrentUser] = useState(() => {

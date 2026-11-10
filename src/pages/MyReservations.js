@@ -1,5 +1,4 @@
-
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FiCalendar, FiUsers, FiArrowUpRight, FiXCircle, FiClipboard, FiPlus, FiCheckCircle } from 'react-icons/fi';
 

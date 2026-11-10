@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { FiMapPin, FiPhone, FiMail, FiClock, FiArrowUpRight, FiSend } from 'react-icons/fi';
 
 import Navbar from '../components/Navbar';
@@ -119,8 +119,8 @@ function Contact() {
 
                 <div>
                   <h4>Phone Number</h4>
-                  <a href="tel:+96170000000">
-                    +961 70 000 000
+                  <a href="tel:+96170123456">
+                    +961 70 123 456
                   </a>
                 </div>
               </div>

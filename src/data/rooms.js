@@ -1,4 +1,3 @@
-
 import deluxeRoom from '../assets/images/room-deluxe.jpg';
 import twin from '../assets/images/twin.jpg';
 import suiteRoom from '../assets/images/room-suite.jpg';

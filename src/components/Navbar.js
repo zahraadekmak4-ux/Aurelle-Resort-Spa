@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { FiMenu, FiX, FiUser, FiArrowUpRight, FiLogOut } from 'react-icons/fi';
 import { useHotel } from '../context/HotelContext';
