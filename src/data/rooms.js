@@ -20,7 +20,7 @@ const rooms = [
     price: 180,
     capacity: 2,
     size: 35,
-    bed: '1 King Bed',
+    beds: '1 King Bed',
     image: deluxeRoom,
     description:
       'A beautifully designed room offering a peaceful garden atmosphere, elegant interiors, and everything you need for a relaxing stay.',
@@ -39,7 +39,7 @@ const rooms = [
     price: 200,
     capacity: 2,
     size: 40,
-    bed: '2 Twin Beds',
+    beds: '2 Twin Beds',
     image: twin,
     description:
       'An inviting twin room featuring elegant furnishings, modern comforts, and a relaxing atmosphere for a memorable stay.',
@@ -63,7 +63,7 @@ const rooms = [
     price: 280,
     capacity: 2,
     size: 55,
-    bed: '1 King Bed + Sofa bed',
+    beds: '1 King Bed + Sofa bed',
     image: suiteRoom,
     description:
   'Experience refined comfort in our Premium Suite, featuring elegant interiors, a private balcony with beautiful sea views, and a spacious living area designed for a relaxing and memorable stay.',
@@ -82,7 +82,7 @@ const rooms = [
     price: 310,
     capacity: 3,
     size: 60,
-    bed: 'King Bed + Sofa Bed',
+    beds: 'King Bed + Sofa Bed',
     image: junior,
     description:
   'Enjoy a relaxing stay in our elegant Junior Suite, featuring a spacious sitting area, modern interiors, and beautiful sea views from a private balcony. Designed to offer the perfect balance of comfort and style.',
@@ -106,7 +106,7 @@ const rooms = [
     price: 350,
     capacity: 3,
     size: 70,
-    bed: '1 King Bed + Sofa Bed',
+    beds: '1 King Bed + Sofa Bed',
     image: executiveRoom,
     description:
       'Experience elevated comfort in an elegant suite featuring a spacious living area, premium furnishings, and refined amenities.',
@@ -125,7 +125,7 @@ const rooms = [
     price: 420,
     capacity: 3,
     size: 85,
-    bed: 'King Bed + Sofa Bed',
+    beds: 'King Bed + Sofa Bed',
     image: royal,
     description:
       'A sophisticated ocean-inspired retreat offering panoramic views, a private balcony, and generous living space.',
@@ -149,7 +149,7 @@ const rooms = [
     price: 520,
     capacity: 4,
     size: 110,
-    bed: '2 King Beds',
+    beds: '2 King Beds',
     image: presidentialRoom,
     description:
       'Discover exceptional hospitality in a luxurious presidential suite featuring a private lounge, panoramic views, and exclusive amenities.',
@@ -168,7 +168,7 @@ const rooms = [
     price: 650,
     capacity: 5,
     size: 140,
-    bed: '2 King Beds + Sofa Bed',
+    beds: '2 King Beds + Sofa Bed',
     image: imperial,
       descreption: 
       'Our finest accommodation, featuring an expansive private living room, elegant dining space, and exclusive luxury experiences.',
