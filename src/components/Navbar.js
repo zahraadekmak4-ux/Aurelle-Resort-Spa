@@ -95,9 +95,7 @@ function Navbar() {
               {currentUser ? (
                 <div className="user-profile-menu">
                   <span className="navbar-account">
-                    <span className="avatar-chip">
-                      {currentUser.name ? currentUser.name.charAt(0).toUpperCase() : <FiUser />}
-                    </span>
+        
                     <span className="user-name">Welcome, {currentUser.name}</span>
                   </span>
 
