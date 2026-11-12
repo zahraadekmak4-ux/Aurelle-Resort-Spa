@@ -47,16 +47,16 @@ function Rooms() {
     }
   ];
 
-  // Search rooms
-  let filteredRooms = rooms.filter(room => {
-    const searchValue = search.toLowerCase();
+ // Search rooms
+let filteredRooms = rooms.filter(room => {
+  const searchValue = search.toLowerCase();
 
-    return (
-      room.name.toLowerCase().includes(searchValue) ||
-      room.category.toLowerCase().includes(searchValue) ||
-      room.description.toLowerCase().includes(searchValue)
-    );
-  });
+  return (
+    room.name.toLowerCase().includes(searchValue) ||
+    (room.category || '').toLowerCase().includes(searchValue) ||
+    (room.description || '').toLowerCase().includes(searchValue)
+  );
+});
 
   // Sort rooms by price
   if (sort === 'low') {
