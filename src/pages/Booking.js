@@ -182,7 +182,7 @@ function Booking() {
                 <span className="section-eyebrow">01 / YOUR STAY</span>
                 <h2>Reservation Details</h2>
 
-                <div className="booking-input-grid">
+                <div className="booking-stay-bar">
                   <div className="booking-field">
                     <label htmlFor="checkIn">CHECK-IN DATE</label>
                     <div className="booking-input-wrapper">

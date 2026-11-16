@@ -1,6 +1,14 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { FiCalendar, FiUsers, FiArrowUpRight, FiXCircle, FiClipboard, FiPlus, FiCheckCircle } from 'react-icons/fi';
+import {
+  FiCalendar,
+  FiUsers,
+  FiXCircle,
+  FiClipboard,
+  FiPlus,
+  FiCheckCircle,
+  FiArrowUpRight
+} from 'react-icons/fi';
 
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -14,6 +22,13 @@ function MyReservations() {
 
   const [filter, setFilter] = useState('All');
   const [cancelMessage, setCancelMessage] = useState('');
+
+  // Protect the reservations page
+  useEffect(() => {
+    if (!currentUser) {
+      navigate('/auth', { replace: true });
+    }
+  }, [currentUser, navigate]);
 
   const userReservations = currentUser
     ? reservations.filter(
@@ -33,7 +48,10 @@ function MyReservations() {
 
     if (confirmed) {
       cancelReservation(id);
-      setCancelMessage('Your reservation has been cancelled successfully.');
+
+      setCancelMessage(
+        'Your reservation has been cancelled successfully.'
+      );
 
       setTimeout(() => {
         setCancelMessage('');
@@ -41,33 +59,9 @@ function MyReservations() {
     }
   }
 
+  // Do not display reservations to logged-out users
   if (!currentUser) {
-    return (
-      <>
-        <Navbar />
-
-        <section className="reservations-empty">
-          <div className="reservations-empty-icon">
-            <FiClipboard />
-          </div>
-
-          <span className="section-eyebrow">WELCOME TO AURELLE</span>
-          <h1>Your Reservations</h1>
-          <p>
-            Please sign in to view and manage your reservations.
-          </p>
-
-          <button
-            className="reservations-primary-button"
-            onClick={() => navigate('/auth')}
-          >
-            SIGN IN <FiArrowUpRight />
-          </button>
-        </section>
-
-        <Footer />
-      </>
-    );
+    return null;
   }
 
   return (
@@ -91,6 +85,7 @@ function MyReservations() {
           </div>
 
           <div className="reservations-stats">
+
             <div className="reservation-stat">
               <span>TOTAL RESERVATIONS</span>
               <strong>{userReservations.length}</strong>
@@ -113,9 +108,11 @@ function MyReservations() {
                 ).length}
               </strong>
             </div>
+
           </div>
 
           <div className="reservations-list-heading">
+
             <div>
               <span className="section-eyebrow">YOUR BOOKINGS</span>
               <h2>Reservation History</h2>
@@ -127,13 +124,16 @@ function MyReservations() {
             >
               <FiPlus /> BOOK A ROOM
             </button>
+
           </div>
 
           <div className="reservation-filters">
             {['All', 'Confirmed', 'Cancelled'].map(item => (
               <button
                 key={item}
-                className={filter === item ? 'reservation-filter-active' : ''}
+                className={
+                  filter === item ? 'reservation-filter-active' : ''
+                }
                 onClick={() => setFilter(item)}
               >
                 {item}
@@ -148,15 +148,19 @@ function MyReservations() {
           )}
 
           {filteredReservations.length > 0 ? (
+
             <div className="reservations-list">
+
               {filteredReservations
                 .slice()
                 .sort((a, b) => b.id - a.id)
                 .map(reservation => (
+
                   <article
                     className="reservation-card"
                     key={reservation.id}
                   >
+
                     <div className="reservation-card-image">
                       <img
                         src={reservation.roomImage}
@@ -165,11 +169,14 @@ function MyReservations() {
                     </div>
 
                     <div className="reservation-card-content">
+
                       <div className="reservation-card-top">
+
                         <div>
                           <span className="section-eyebrow">
                             RESERVATION #{String(reservation.id).slice(-6)}
                           </span>
+
                           <h3>{reservation.roomName}</h3>
                         </div>
 
@@ -182,9 +189,11 @@ function MyReservations() {
                         >
                           {reservation.status}
                         </span>
+
                       </div>
 
                       <div className="reservation-details-grid">
+
                         <div>
                           <FiCalendar />
                           <span>CHECK-IN</span>
@@ -202,9 +211,11 @@ function MyReservations() {
                           <span>GUESTS</span>
                           <strong>{reservation.guests}</strong>
                         </div>
+
                       </div>
 
                       <div className="reservation-card-bottom">
+
                         <div>
                           <span>{reservation.nights} NIGHT(S)</span>
                           <strong>${reservation.totalPrice}</strong>
@@ -218,14 +229,23 @@ function MyReservations() {
                             <FiXCircle /> CANCEL BOOKING
                           </button>
                         )}
+
                       </div>
+
                     </div>
+
                   </article>
+
                 ))}
+
             </div>
+
           ) : (
+
             <div className="reservations-no-results">
+
               <FiClipboard />
+
               <h3>
                 {filter === 'All'
                   ? 'No Reservations Yet'
@@ -244,7 +264,9 @@ function MyReservations() {
               >
                 EXPLORE ROOMS <FiArrowUpRight />
               </button>
+
             </div>
+
           )}
 
         </div>

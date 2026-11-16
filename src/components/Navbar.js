@@ -1,16 +1,17 @@
 import { useState, useEffect } from 'react';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { FiMenu, FiX, FiUser, FiArrowUpRight, FiLogOut } from 'react-icons/fi';
+
 import { useHotel } from '../context/HotelContext';
- import '../styles/Navbar.css';
+import '../styles/Navbar.css';
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+
   const { currentUser, logoutUser } = useHotel();
   const navigate = useNavigate();
 
-  // Close menu on ESC key press & auto-close menu on resize to desktop
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key === 'Escape') setMenuOpen(false);
@@ -52,6 +53,7 @@ function Navbar() {
     <>
       <nav className={`aurelle-navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="container navbar-inner">
+
           <Link to="/" className="aurelle-logo" onClick={closeMenu}>
             AURELLE<span className="dot">.</span>
             <small className="tagline">HOTEL & RESORT</small>
@@ -72,31 +74,61 @@ function Navbar() {
             className={`navbar-content ${menuOpen ? 'show' : ''}`}
           >
             <div className="navbar-links">
-              <NavLink to="/" end className={getNavLinkClass} onClick={closeMenu}>
+
+              <NavLink
+                to="/"
+                end
+                className={getNavLinkClass}
+                onClick={closeMenu}
+              >
                 Home
               </NavLink>
 
-              <NavLink to="/about" className={getNavLinkClass} onClick={closeMenu}>
+              <NavLink
+                to="/about"
+                className={getNavLinkClass}
+                onClick={closeMenu}
+              >
                 Our Experience
               </NavLink>
-              <NavLink to="/rooms" className={getNavLinkClass} onClick={closeMenu}>
+
+              <NavLink
+                to="/rooms"
+                className={getNavLinkClass}
+                onClick={closeMenu}
+              >
                 Rooms & Suites
               </NavLink>
-              
-              <NavLink to="/contact" className={getNavLinkClass} onClick={closeMenu}>
-               Contact Us
+
+              <NavLink
+                to="/contact"
+                className={getNavLinkClass}
+                onClick={closeMenu}
+              >
+                Contact Us
               </NavLink>
-              <NavLink to="/reservations" className={getNavLinkClass} onClick={closeMenu}>
-                My Reservations
-              </NavLink>
+
+              {currentUser && (
+                <NavLink
+                  to="/reservations"
+                  className={getNavLinkClass}
+                  onClick={closeMenu}
+                >
+                  My Reservations
+                </NavLink>
+              )}
+
             </div>
 
             <div className="navbar-actions">
+
               {currentUser ? (
                 <div className="user-profile-menu">
+
                   <span className="navbar-account">
-        
-                    <span className="user-name">Welcome, {currentUser.name}</span>
+                    <span className="user-name">
+                      Welcome, {currentUser.name}
+                    </span>
                   </span>
 
                   <button
@@ -107,6 +139,7 @@ function Navbar() {
                     <FiLogOut />
                     <span>Sign Out</span>
                   </button>
+
                 </div>
               ) : (
                 <Link
@@ -127,17 +160,17 @@ function Navbar() {
                 <span>BOOK YOUR STAY</span>
                 <FiArrowUpRight className="arrow-icon" />
               </Link>
+
             </div>
           </div>
         </div>
       </nav>
 
-      {/* Backdrop overlay for mobile menu */}
       {menuOpen && (
-        <div 
-          className="navbar-overlay" 
-          onClick={closeMenu} 
-          aria-hidden="true" 
+        <div
+          className="navbar-overlay"
+          onClick={closeMenu}
+          aria-hidden="true"
         />
       )}
     </>

@@ -1,9 +1,14 @@
-/* BOOKING PAGE */
+
+/* ================================
+   BOOKING PAGE
+================================ */
 
 .booking-page {
   padding: 45px 0 100px;
   background: var(--background);
 }
+
+/* PAGE HEADING */
 
 .booking-page-heading {
   text-align: center;
@@ -25,12 +30,16 @@
   font-size: 14px;
 }
 
+/* BOOKING LAYOUT */
+
 .booking-layout {
   display: grid;
   grid-template-columns: 1.5fr 0.8fr;
   gap: 55px;
   align-items: start;
 }
+
+/* BOOKING FORM */
 
 .booking-form {
   background: #fff;
@@ -47,56 +56,79 @@
   margin: 12px 0 25px;
 }
 
-.booking-input-grid {
+/* COMPACT RESERVATION BAR */
+
+.booking-stay-bar {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 25px 20px;
+  grid-template-columns: 1.2fr 1.2fr 0.9fr;
+  gap: 12px;
+  align-items: end;
+  padding: 16px;
+  background: #faf9f6;
+  border: 1px solid #eee8de;
 }
 
 .booking-field {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 7px;
+  min-width: 0;
 }
 
 .booking-field label {
-  font-size: 10px;
+  font-size: 9px;
   font-weight: 700;
-  letter-spacing: 1.3px;
+  letter-spacing: 1.1px;
   color: var(--muted);
 }
+
+
+/* CENTERED INPUT ICONS */
 
 .booking-input-wrapper {
   display: flex;
   align-items: center;
-  gap: 12px;
+  justify-content: center;
+  gap: 10px;
   border: 1px solid #e7e1d6;
-  padding: 0 14px;
-  min-height: 52px;
+  padding: 0 12px;
+  min-height: 46px;
+  background: #fff;
 }
 
 .booking-input-wrapper svg {
   color: var(--primary-dark);
+  font-size: 16px;
+  width: 17px;
+  height: 17px;
   flex-shrink: 0;
+  display: block;
 }
 
 .booking-input-wrapper input,
 .booking-input-wrapper select {
-  width: 100%;
+  flex: 1;
   min-width: 0;
+  height: 44px;
   border: none;
   outline: none;
   background: transparent;
   color: var(--dark);
   font-family: inherit;
-  font-size: 13px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
 }
+
+/* SECTION DESCRIPTION */
 
 .booking-section-description {
   color: var(--muted);
   font-size: 13px;
   margin: -10px 0 20px;
 }
+
+/* TEXTAREA */
 
 .booking-form-section textarea {
   width: 100%;
@@ -110,10 +142,11 @@
   color: var(--dark);
 }
 
-.booking-form-section textarea:focus,
-.booking-input-wrapper:focus-within {
+.booking-form-section textarea:focus {
   border-color: var(--primary);
 }
+
+/* ERROR MESSAGE */
 
 .booking-error {
   background: #fff0ed;
@@ -130,6 +163,8 @@
   margin-bottom: 15px;
 }
 
+/* SUBMIT BUTTON */
+
 .booking-submit-button {
   width: 100%;
   min-height: 55px;
@@ -145,11 +180,16 @@
   justify-content: center;
   gap: 12px;
   transition: background 0.3s;
+  cursor: pointer;
 }
 
 .booking-submit-button:hover {
   background: var(--primary-dark);
 }
+
+/* ================================
+   BOOKING SUMMARY
+================================ */
 
 .booking-summary {
   background: #fff;
@@ -211,6 +251,8 @@
   font-weight: 600;
 }
 
+/* TOTAL PRICE */
+
 .booking-total {
   display: flex;
   justify-content: space-between;
@@ -237,6 +279,10 @@
   line-height: 1.7;
   margin-top: 15px;
 }
+
+/* ================================
+   BOOKING SUCCESS
+================================ */
 
 .booking-success {
   min-height: 75vh;
@@ -298,6 +344,10 @@
   max-width: 430px;
 }
 
+/* ================================
+   BOOKING NOT FOUND
+================================ */
+
 .booking-not-found {
   min-height: 55vh;
   display: flex;
@@ -325,12 +375,16 @@
   padding: 14px 25px;
   font-size: 11px;
   letter-spacing: 1px;
+  cursor: pointer;
 }
+
+/* ================================
+   RESPONSIVE DESIGN
+================================ */
 
 @media (max-width: 991px) {
   .booking-layout {
     grid-template-columns: 1fr;
-    ;
     gap: 30px;
   }
 
@@ -339,17 +393,49 @@
   }
 }
 
+/* TABLETS */
+
+@media (max-width: 768px) {
+  .booking-form {
+    padding: 30px 24px;
+  }
+
+  .booking-stay-bar {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .booking-stay-bar .booking-field:last-child {
+    grid-column: 1 / -1;
+  }
+}
+
+/* MOBILE */
+
 @media (max-width: 576px) {
   .booking-page {
     padding: 30px 0 65px;
+  }
+
+  .booking-page-heading {
+    margin: 20px 0 35px;
   }
 
   .booking-form {
     padding: 25px 18px;
   }
 
-  .booking-input-grid {
+  .booking-stay-bar {
     grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 13px;
+  }
+
+  .booking-stay-bar .booking-field:last-child {
+    grid-column: auto;
+  }
+
+  .booking-input-wrapper {
+    min-height: 46px;
   }
 
   .booking-form-section h2 {
