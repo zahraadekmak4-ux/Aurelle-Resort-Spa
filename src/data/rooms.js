@@ -152,7 +152,7 @@ const rooms = [
     size: 140,
     beds: '2 King Beds + Sofa Bed',
     image: imperial,
-      descreption: 
+      description: 
       'Our finest accommodation, featuring an expansive private living room, elegant dining space, and exclusive luxury experiences.',
     amenities: [
       'Private Living Room',
