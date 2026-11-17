@@ -14,25 +14,6 @@ const rooms = [
   // =========================
 
   {
-    id: 1,
-    name: 'Deluxe Garden Room',
-    category: 'Deluxe',
-    price: 180,
-    capacity: 2,
-    size: 35,
-    beds: '1 King Bed',
-    image: deluxeRoom,
-    description:
-      'A beautifully designed room offering a peaceful garden atmosphere, elegant interiors, and everything you need for a relaxing stay.',
-    amenities: [
-      'Free Wi-Fi',
-      'Air Conditioning',
-      'Smart TV',
-      'Private Bathroom'
-    ]
-  },
-
-  {
     id: 5,
     name: 'Deluxe Twin Room',
     category: 'Deluxe',
@@ -52,9 +33,49 @@ const rooms = [
     ]
   },
 
+  {
+    id: 1,
+    name: 'Deluxe Garden Room',
+    category: 'Deluxe',
+    price: 180,
+    capacity: 2,
+    size: 35,
+    beds: '1 King Bed',
+    image: deluxeRoom,
+    description:
+      'A beautifully designed room offering a peaceful garden atmosphere, elegant interiors, and everything you need for a relaxing stay.',
+    amenities: [
+      'Free Wi-Fi',
+      'Air Conditioning',
+      'Smart TV',
+      'Private Bathroom'
+    ]
+  },
+
+  
+
   // =========================
   // SUITE COLLECTION
   // =========================
+{
+    id: 6,
+    name: 'Junior Suite (Sea View)',
+    category: 'Suite',
+    price: 310,
+    capacity: 3,
+    size: 60,
+    beds: 'King Bed + Sofa Bed',
+    image: junior,
+    description:
+  'Enjoy a relaxing stay in our elegant Junior Suite, featuring a spacious sitting area, modern interiors, and beautiful sea views from a private balcony. Designed to offer the perfect balance of comfort and style.',
+    amenities: [
+      'Separate Sitting Area',
+      'Free Wi-Fi',
+      'Mini Bar',
+      'Luxury Bathroom',
+      'Room Service'
+    ]
+  },
 
   {
     id: 2,
@@ -75,29 +96,28 @@ const rooms = [
     ]
   },
 
-  {
-    id: 6,
-    name: 'Junior Suite (Sea View)',
-    category: 'Suite',
-    price: 310,
-    capacity: 3,
-    size: 60,
-    beds: 'King Bed + Sofa Bed',
-    image: junior,
-    description:
-  'Enjoy a relaxing stay in our elegant Junior Suite, featuring a spacious sitting area, modern interiors, and beautiful sea views from a private balcony. Designed to offer the perfect balance of comfort and style.',
-    amenities: [
-      'Separate Sitting Area',
-      'Free Wi-Fi',
-      'Mini Bar',
-      'Luxury Bathroom',
-      'Room Service'
-    ]
-  },
-
   // =========================
   // LUXURY COLLECTION
   // =========================
+    {
+    id: 7,
+    name: 'Royal Ocean Suite',
+    category: 'Luxury',
+    price: 420,
+    capacity: 3,
+    size: 85,
+    beds: 'King Bed + Sofa Bed',
+    image: royal,
+    description:
+      'A sophisticated ocean-inspired retreat offering panoramic views, a private balcony, and generous living space.',
+    amenities: [
+      'Panoramic Sea View',
+      'Private Balcony',
+      'Living Area',
+      'Mini Bar',
+      'Premium Bathroom'
+    ]
+  },
 
   {
     id: 3,
@@ -118,29 +138,31 @@ const rooms = [
     ]
   },
 
-  {
-    id: 7,
-    name: 'Royal Ocean Suite',
-    category: 'Luxury',
-    price: 420,
-    capacity: 3,
-    size: 85,
-    beds: 'King Bed + Sofa Bed',
-    image: royal,
-    description:
-      'A sophisticated ocean-inspired retreat offering panoramic views, a private balcony, and generous living space.',
-    amenities: [
-      'Panoramic Sea View',
-      'Private Balcony',
-      'Living Area',
-      'Mini Bar',
-      'Premium Bathroom'
-    ]
-  },
+
 
   // =========================
   // PRESIDENTIAL COLLECTION
   // =========================
+{
+    id: 8,
+    name: 'Imperial Presidential Suite',
+    category: 'Presidential',
+    price: 650,
+    capacity: 5,
+    size: 140,
+    beds: '2 King Beds + Sofa Bed',
+    image: imperial,
+      descreption: 
+      'Our finest accommodation, featuring an expansive private living room, elegant dining space, and exclusive luxury experiences.',
+    amenities: [
+      'Private Living Room',
+      'Panoramic Sea View',
+      'Private Jacuzzi',
+      'Dining Area',
+      'VIP Room Service',
+      'Premium Amenities'
+    ]
+  },
 
   {
     id: 4,
@@ -160,28 +182,6 @@ const rooms = [
       'Premium Service'
     ]
   },
-
-  {
-    id: 8,
-    name: 'Imperial Presidential Suite',
-    category: 'Presidential',
-    price: 650,
-    capacity: 5,
-    size: 140,
-    beds: '2 King Beds + Sofa Bed',
-    image: imperial,
-      descreption: 
-      'Our finest accommodation, featuring an expansive private living room, elegant dining space, and exclusive luxury experiences.',
-    amenities: [
-      'Private Living Room',
-      'Panoramic Sea View',
-      'Private Jacuzzi',
-      'Dining Area',
-      'VIP Room Service',
-      'Premium Amenities'
-    ]
-  }
-
 ];
 
 export default rooms;
