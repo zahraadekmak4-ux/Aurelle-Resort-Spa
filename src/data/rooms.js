@@ -14,7 +14,7 @@ const rooms = [
   // =========================
 
   {
-    id: 5,
+    id: 1,
     name: 'Deluxe Twin Room',
     category: 'Deluxe',
     price: 200,
@@ -34,7 +34,7 @@ const rooms = [
   },
 
   {
-    id: 1,
+    id: 5,
     name: 'Deluxe Garden Room',
     category: 'Deluxe',
     price: 180,
@@ -58,7 +58,7 @@ const rooms = [
   // SUITE COLLECTION
   // =========================
 {
-    id: 6,
+    id: 2,
     name: 'Junior Suite (Sea View)',
     category: 'Suite',
     price: 310,
@@ -78,7 +78,7 @@ const rooms = [
   },
 
   {
-    id: 2,
+    id: 6,
     name: 'Premium Suite',
     category: 'Suite',
     price: 280,
@@ -100,7 +100,7 @@ const rooms = [
   // LUXURY COLLECTION
   // =========================
     {
-    id: 7,
+    id: 3,
     name: 'Royal Ocean Suite',
     category: 'Luxury',
     price: 420,
@@ -120,7 +120,7 @@ const rooms = [
   },
 
   {
-    id: 3,
+    id: 7,
     name: 'Executive Luxury Suite',
     category: 'Luxury',
     price: 350,
@@ -144,7 +144,7 @@ const rooms = [
   // PRESIDENTIAL COLLECTION
   // =========================
 {
-    id: 8,
+    id: 4,
     name: 'Imperial Presidential Suite',
     category: 'Presidential',
     price: 650,
@@ -165,7 +165,7 @@ const rooms = [
   },
 
   {
-    id: 4,
+    id: 8,
     name: 'Royal Presidential Suite',
     category: 'Presidential',
     price: 520,
